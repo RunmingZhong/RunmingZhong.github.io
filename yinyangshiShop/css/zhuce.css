@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#bigbox{
+	width:1284px;
+	height:660px;
+	margin: 0 auto;
+}
+#box{
+	width:1284px;
+	height:560px;
+	background: url(../img/video_bg_69d56fe.jpg);
+	background-size: 1284px 560px;
+}
+#zhuce{
+	width:650px;
+	height: 560px;
+	margin-left:400px
+}
+input {
+	width: 300px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-left:20px;
+	border: 1px solid lightblue;
+}
+#h20{
+	width:300px;
+	height: 30px;
+	margin: 0 auto;
+}
+h2{
+	/*text-align: center;*/
+}
+#username{
+	margin-left:40px;
+}
+#iphone{
+	margin-left:40px;
+}
+#pass{
+	margin-left:30px;
+}
+#passt{
+	margin-left:30px;
+}
+#btn {
+	width:300px;
+	height: 50px;
+	background-color:#ff3c3c;
+	margin-top: 50px;
+	color:white;
+	outline: none;
+	margin-left:80px;
+}
+#textd {
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-left:30px;
+	border: 1px solid lightblue;
+}
+#textdd {
+	width: 100px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-left:5px;
+	border: 1px solid lightblue;
+}
+
+#p1 {
+	color: red;
+}
+#zhuce label{
+	margin-left:20px;
+}
+span {
+	color: red;
+	font-size: 11px;
+}
+#foot{
+	width:1284px;
+	height:100px;
+	background:url(../img/adfasdfasdf.png);
+}
+#foot ul{
+	margin-left:520px;
+	line-height: 80px;
+}
+#foot ul li{
+	list-style: none;
+	float:left;
+	margin-left:30px;
+}
+#foot ul li a{
+	color:white;
+	font-size: 10px;
+	text-decoration: none;
+}

@@ -1,0 +1,41 @@
+{
+ 	"Home commodity":[{"imgsrc":"img/asdfasdfasdfeee ggg.jpg","name":"姑获鸟游戏周边抱枕靠垫定制做生日礼物","price":"35￥"},
+ 					  {"imgsrc":"img/asdfasdfasdfeee qwer.jpg","name":"二次元创意礼品夜灯萤草床头灯","price":"95￥"},
+ 					  {"imgsrc":"img/wtyertyerty.jpg","name":"毛绒公仔玩具 动漫周边 生日礼物靠垫","price":"40￥"}
+ 					  ],
+ 	"sp1img":[{"imgsrc":"img/asdfasdfasdfeee ggg.jpg","name":"阴阳师 大天狗 晴明 姑获鸟游戏周边抱枕靠垫定制做生日礼物","price":"35￥"},
+ 			  {"imgsrc":"img/sp1_11.jpg","name":"阴阳师 大天狗 晴明 姑获鸟游戏周边抱枕靠垫定制做生日礼物","price":"35￥"},
+ 			  {"imgsrc":"img/sp1_22.jpg","name":"阴阳师 大天狗 晴明 姑获鸟游戏周边抱枕靠垫定制做生日礼物","price":"35￥"},
+ 			  {"imgsrc":"img/sp1_33.jpg","name":"阴阳师 大天狗 晴明 姑获鸟游戏周边抱枕靠垫定制做生日礼物","price":"35￥"},
+ 			  {"size1":"60cm缎面","size2":"60cm绒面","size3":"50cm桃皮布"}
+ 			],
+ 	"sp2img":[{"imgsrc":"img/asdfasdfasdfeee qwer.jpg","name":"二次元创意礼品夜灯萤草床头灯","price":"95￥"},
+ 			  {"imgsrc":"img/sp2_111.jpg","name":"二次元创意礼品夜灯萤草床头灯","price":"95￥"},
+ 			  {"imgsrc":"img/sp2_112.jpg","name":"二次元创意礼品夜灯萤草床头灯","price":"95￥"},
+ 			  {"imgsrc":"img/sp2_113.jpg","name":"二次元创意礼品夜灯萤草床头灯","price":"95￥"},
+ 			  {"size1":"萤草1","size2":"萤草2","size3":"萤草3"}
+ 			],
+ 	"sp3img":[{"imgsrc":"img/wtyertyerty.jpg","name":"毛绒公仔玩具 动漫周边 生日礼物靠垫","price":"40￥"},
+ 			  {"imgsrc":"img/sp3_11.jpg","name":"毛绒公仔玩具 动漫周边 生日礼物靠垫","price":"40￥"},
+ 			  {"imgsrc":"img/sp3_12.jpg","name":"毛绒公仔玩具 动漫周边 生日礼物靠垫","price":"40￥"},
+ 			  {"imgsrc":"img/sp3_13.jpg","name":"毛绒公仔玩具 动漫周边 生日礼物靠垫","price":"40￥"},
+ 			  {"size1":"小号250cm","size2":"中号250cm","size3":"大号250cm"}
+ 			],
+ 	"proArr":[  {"id":"北京","name":"北京"},
+				{"id":"河北","name":"河北"},
+				{"id":"广东","name":"广东"} 
+			],
+	"cityObj":{ "北京":["北京#北京"],
+				"河北":["石家庄#石家庄","保定#保定","沧州#沧州"],
+				"广东":["广州#广州","清远#清远","佛山#佛山"] 
+			},
+	"counObj":{
+				"北京":["海淀区","朝阳区","大兴区","通州区"],
+				"石家庄":["蠡县","矿山","赵县"],
+				"保定":["南市区","北市区"],
+				"沧州":["丛台区", "邯山区", "复兴区", "峰峰县", "武安县"],
+				"广州": ["天河区", "越秀区", "花都区", "海珠区"],
+				"清远": ["宝山区", "浦东区", "徐汇区", "静安区", "虹口区", "嘉定区"],
+				"佛山": ["塘沽区", "北辰区", "南开区", "河东区", "滨海区"]
+			}
+}
