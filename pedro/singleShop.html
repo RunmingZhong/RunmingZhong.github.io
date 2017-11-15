@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/singleShop.css"/>
+		<script type="text/javascript">
+			//获取像素比
+			var head =document.getElementsByTagName('head')[0];
+			var meta =document.createElement('meta');
+			meta.name='viewport';
+			var i = window.devicePixelRatio>1?1/window.devicePixelRatio:1;
+			meta.content="width=device-width,user-scalable=yes,initial-scale="+i+",minimum-scale="+i+",maximum-scale="+i;
+			head.appendChild(meta);
+			//设置rem
+			var iw =window.innerWidth;
+			//IW=40
+			var font =iw/15;
+			var html =document.getElementsByTagName('html')[0];
+			html.style.fontSize =font+'px';
+		</script>
+	</head>
+	<body>
+		<div id="singleShopNeiye" >
+			<div class="upNav_singleShop">
+				<a href="javascript:history.go(-1)"><img src="img/back001.png" id="closeBtn_singleShop"/></a>
+				<span id="singleShopName">{{shopShowCon[sign][0].shopShow[0].name}}</span>
+				<a href="index.html"><img src="img/homelogo.png" id="homeLogo"/></a>
+			</div>
+			<img src="img/xinxi.png" id="xinxi"/>
+			<!--轮播图 -->
+			<div id="lunbotuShop">
+				<div class="swiper-container">
+				    <!--第一屏-->
+				    <div class="swiper-wrapper " id="lunboShow02" v-for="(kk,index) in shopShowCon[sign][index].shopShow">
+				    	 <div class="swiper-slide "><img :src="kk.src"/></div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<p id="moneyShow">{{shopShowCon[sign][0].shopShow[0].price}}</p>
+			<div id="shopButtomShowFather">
+				<ul id="shopButtomShow">
+					<li v-for="(m,index) in shopShowButtom[sign]"><img :src="m.src"/></li>
+				</ul>
+			</div>
+			<ul id="footerNav">
+				<li id="lijiBuy">立即购买</li>
+				<li id="joinBuyBag">加入购物袋</li>
+				<li id="rongliangcankao">容量参考</li>
+			</ul>
+			<ul id="liji" class="singleShopNeiye_ative">
+				<li v-for="(l,index) in shopShowCon[sign][0].shopShow">{{l.size}}<span class="jiesuanBtn singleShopNeiye_ative">结算</span></li>
+			</ul>
+			<ul id="jiaru" class="singleShopNeiye_ative">
+				<li v-for="(n,index) in shopShowCon[sign][0].shopShow">{{n.size}}<span class="jiaruBtn singleShopNeiye_ative">添加</span></li>
+			</ul>
+			<div id="xinxiContent" class='singleShopNeiye_ative'>
+				<div class="xinxiTrue">
+					<p id="xinxiTrueName"></p>
+					<ul  v-for="(pp,index) in shopShowCon[sign][2].shopShowInformation">
+						<li>{{pp}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<img src="img/rongliangcankao.PNG" id="rongliang" class="singleShopNeiye_ative"/>
+		<div id="author" class="singleShopNeiye_ative"></div>
+		
+		<!--待支付页面-->
+			<div id="buyMenu" class="singleShopNeiye_ative">
+				<div class="upNav_buyMenu">
+					<img src="img/back001.png" id="closeBtn_buyMenu"/>
+					<span>待支付订单</span>
+				</div>
+				<div class="p_buyMenu">首单购物满1500元，即可成为vip会员</div>
+				<div class="jutiBuy">
+					<ul>
+						<li id="address"><span style="float: left;">收件人：</span><textarea placeholder="请填写配送地址"></textarea></li>
+						<li><span>优惠券&nbsp;&nbsp;&nbsp;&nbsp;</span><div>暂无可使用的优惠券</div></li>
+						<li><span>支付方式</span><div>微信</div></li>
+						<li><span>配送方式</span><div>选择配送方式</div></li>
+						<li><span>配送费用</span><div>-￥ 0.00</div></li>
+						<li><span>促销折扣</span><div>-￥ 0.00</div></li>
+						<li><span>优惠券&nbsp;&nbsp;&nbsp;&nbsp;</span><div>-￥ 0.00</div></li>
+						<li><span>vip折扣-10%</span><div>-￥ 0.00</div></li>
+					</ul>
+				</div>
+				<div class="foot_Buy">
+					<div class="money_Zong">
+						支付金额(含税)：<span></span>
+					</div>
+					<input type="button" name="" id="zhifu_Btn" value="支付" disabled="disabled"/>
+				</div>
+			</div>
+			<img src="img/tiajianSucces.gif" id="tianjianSucces" class="singleShopNeiye_ative"/>
+	</body>
+	<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/singleShop.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,445 @@
+*{
+			margin: 0;
+			padding: 0;
+			font-family: "微软雅黑";
+		}
+		li{
+			list-style: none;
+		}
+		
+		input {-webkit-appearance:none; /*去除input默认样式*/}
+		.activeHide{
+			display: none;
+		}
+		/*首页*/
+		#HomePage{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		.upNav{
+			width:15rem;
+			height: 1.8rem;
+			border-bottom: 0.02rem solid #ababab;
+			background: #f9f9f9;
+			background: url(../img/imges/logo01.png)no-repeat 5.5rem 0.5rem #f9f9f9;
+			background-size: 4.04rem 0.96rem;
+		}
+		.upNav img{
+			width:0.8rem;
+			height: 0.9rem;
+			position:absolute;
+			top:0.5rem;
+			right: 0.7rem;
+		}
+		.upTwoNav{
+			width:15rem;
+			height: 1.56rem;
+			border-bottom: 0.02rem solid #b8b8b8;
+			background: #f9f9f9;
+		}
+		.upTwoNav ul{
+			width:15rem;
+			height: 1.56rem;
+		}
+		.upTwoNav li{
+			width:25%;
+			height: 1.56rem;
+			float: left;
+			text-align: center;
+			line-height: 1.56rem;
+			font-size: 0.52rem;
+		}
+		.bottomNav{
+			width:15rem;
+			height: 1.96rem;
+			border-top: 0.02rem solid #b2b2b2;
+			position:fixed;
+			bottom: 0;
+			left: 0;
+			background: #f9f9f9;
+			z-index:100;
+		}
+		.bottomNav li{
+			width:33.3333%;
+			height: 1.96rem;
+			color: #929292;
+			float: left;
+			font-size: 0.4rem;
+			text-align: center;
+			line-break: 1.96rem;
+		}
+		.bottomNav i{
+			margin-top: 0.26rem;
+			font-size:1.04rem;
+		}
+		.bottomNav li p{
+			font-size: 0.4rem;
+		}
+		.active{
+			color:#000!important;
+		}
+		.content{
+			width:14.24rem;
+			padding: 0 0.38rem 0 0.38rem;
+		}
+		.swiper-container {
+		    width: 14.2rem;
+		    height: 19.4rem;
+		}  
+		.swiper-slide{
+			font-size: 0.6rem;
+			width:14.2rem;
+		}
+		.swiper-slide img{
+			width: 14.2rem;
+		    height: 19.4rem;
+		}
+		.swiper-pagination-bullet{
+			width:0.3rem!important;
+			height:0.3rem!important;
+			background: white!important;
+			opacity: 1!important;
+			margin: 0 0.2rem 0.2rem 0.2rem!important;
+		}
+		.swiper-pagination-bullet-active{
+			background:#aaa!important;
+		}
+		.newShop{
+			margin-top: 0.6rem;
+			width:14.24rem;
+		}
+		.newShopNav{
+			width:14.24rem;
+			height: 1.1rem;
+			line-height: 1.1rem;
+			font-size: 0.5rem;
+			text-align: center;
+		}
+		.newShop ul{
+			width:14.24rem;
+			height: 9.6rem;
+		}
+		.newShop li{
+			float: left;
+			width:4.6rem;
+			height:4.6rem;
+		}
+		.newShop img{
+			width:4.6rem;
+			height: 4.6rem;
+		}
+		.ML5{
+			margin-left: 0.2rem;
+		}
+		.MT1{
+			margin-top: 0.26rem;
+		}
+		.singleShop{
+			margin-top:0.4rem;
+		}
+		.singleShop img{
+			width:14.24rem;
+			height:20.84rem;
+		}
+		.newShopNav01{
+			width:14.24rem;
+			height:1.1rem;
+			line-height:1.1rem;
+			font-size: 0.5rem;
+			text-align: center;
+		}
+		
+		
+		/*登录页面样式*/
+		#loginPage{
+			position: absolute;
+			left:15rem;
+			top:0;
+		}
+		.upNav_login{
+			width:15rem;
+			height: 1.8rem;
+			border-bottom: 0.02rem solid #ababab;
+			background: #f9f9f9;
+			background: url(../img/imges/logo01.png)no-repeat center  center #f9f9f9;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.upNav_login img{
+			width:0.8rem;
+			height: 0.9rem;
+			position: absolute;
+			top:0.5rem;
+			left: 0.64rem;
+		}
+		.loginNav{
+			margin-top: 1.8rem;
+			width:15rem;
+			height: 6rem;
+		}
+		.loginNav li{
+			width:15rem;
+			height: 2rem;
+			background:white
+			text-align: center;
+			border-bottom: 0.02rem solid #aaa;
+		}
+		.loginNav li:nth-of-type(3){
+			font-size: 0.6rem;
+			background: #ddd;
+			text-align: center;
+			line-height: 2rem;
+		}
+		.loginNav input{
+			width:14.56rem;
+			height:2rem;
+			border: none;
+			outline: none;
+			padding-left: 0.44rem;
+			font-size: 0.5rem;
+		}
+		.loginPage_create{
+			margin-top: 1rem;
+			width:15rem;
+			height: 1rem;
+			line-height: 1rem;
+			text-align: center;
+			font-size: 0.6rem;
+		}
+		
+		
+		/*注册页面*/
+		#registerPage{
+			position: absolute;
+			left:-15rem;
+			top:0px;
+		}
+		.registerPage_upNav{
+			width:15rem;
+			height: 1.8rem;
+			border-bottom: 0.02rem solid #ababab;
+			background: #f9f9f9;
+			line-height: 1.8rem;
+		}
+		.registerPage_upNav span:nth-of-type(1){
+			font-size: 0.6rem;
+			margin-left: 0.5rem;
+		}
+		.registerPage_upNav span:nth-of-type(2){
+			font-size: 0.6rem;
+			margin-left: 5.3rem;
+		}
+		#registerPage_queren{
+			font-size: 0.6rem;
+			outline: none;
+			border: none;
+			background: #f9f9f9;
+			margin-left: 5.3rem;
+			display: inline-block;
+		}
+		.registerPage_content li{
+			width:15rem;
+			height: 2rem;
+			background:white;
+			text-align: center;
+			border-bottom: 0.02rem solid #aaa;
+		}
+		.registerPage_content li input{
+			width:10.8rem;
+			height: 1.9rem;
+			outline: none;
+			border: none;
+			font-size: 0.5rem;
+		}
+		.input_03{
+			width:7.4rem!important;
+		}
+		.registerPage_content li span{
+			width:4.2rem;
+			height: 1.98rem;
+			display: inline-block;
+			text-align: center;
+			font-size: 0.5rem;
+			line-height: 2rem;
+		}
+		.registerPage_content li i{
+			color:red;
+		}
+		.registerPage_content a{
+			width:3.3rem;
+			height: 1.2rem;
+			text-align: center;
+			line-height: 1.2rem;
+			display: inline-block;
+			background: #323232;
+			color: white;
+			font-size: 0.5rem;
+			border-radius: 0.2rem;
+		}
+		/*购物袋样式*/
+		#shopBag{
+			position: absolute;
+			top: 20rem;
+			left: 0;
+		}
+		.upNav_shopBag{
+			width:15rem;
+			height: 1.8rem;
+			border-bottom: 0.02rem solid #ababab;
+			background: #f9f9f9;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.upNav_shopBag span{
+			margin-left: 6.36rem;
+			font-size: 0.6rem;
+			text-align: center;
+			line-height: 1.8rem;
+		}
+		.upNav_shopBag img{
+			width:0.8rem;
+			height: 0.9rem;
+			position: absolute;
+			top:0.5rem;
+			left: 0.5rem;
+		}
+		.content_shopBag img{
+			width:14.38rem;
+			height: 5.24rem;
+			margin-top: 1.8rem;
+		}
+		.content_shopBag input{
+			border: none;
+			width:4.6rem;
+			height: 1.2rem;
+			font-size: 0.5rem;
+			margin-left: 4.78rem;
+		}
+		.content_shopBag{
+			width:15rem
+			text-align: center;
+		}
+		/*商品分类*/
+		#menuNav{
+			position: absolute;
+			left: 15rem;
+			top: 0;
+		}
+		.upNav_menuNav{
+			width:15rem;
+			height: 1.8rem;
+			border-bottom: 0.02rem solid #ababab;
+			background: #f9f9f9;
+		}
+		.upNav_menuNav span{
+			margin-left: 6.36rem;
+			font-size: 0.6rem;
+			text-align: center;
+			line-height: 1.8rem;
+		}
+		.upNav_menuNav img{
+			width:0.8rem;
+			height: 0.9rem;
+			position: absolute;
+			top:0.5rem;
+			left: 0.5rem;
+		}
+		.upTwoNav_menuNav{
+			width:15rem;
+			height: 1.56rem;
+			border-bottom: 0.02rem solid #b8b8b8;
+			background: #f9f9f9;
+		}
+		.upTwoNav_menuNav ul{
+			width:15rem;
+			height: 1.56rem;
+		}
+		.upTwoNav_menuNav li{
+			width:25%;
+			height: 1.56rem;
+			float: left;
+			color: #7c7c7c;
+			text-align: center;
+			line-height: 1.56rem;
+			font-size: 0.52rem;
+		}
+		.menuContent{
+			width:15rem;
+		}
+		.menuContent ul{
+			width:7.5rem;
+			float: left;
+		}
+		.menuContent li{
+			font-size:0.5rem;
+			width:7rem;
+			height: 0.52rem;
+			padding: 0.5rem 0 0.5rem 0.54rem;
+		}
+		.menuContent_active{
+			display: none;
+		}
+		.font_active{
+			color:black!important;
+		}
+		/*商品瀑布流展示*/
+		#shopPubu_Show{
+			position:absolute;
+			left: 15rem;
+			top: 0px;
+			background: #ffffff;
+		}
+		.upNav_shopPubu_Show{
+			width:15rem;
+			height: 1.8rem;
+			border-bottom: 0.02rem solid #ababab;
+			background: #f9f9f9;
+			text-align: center;
+			line-height: 1.8rem;
+		}
+		.upNav_shopPubu_Show span{
+			font-size: 0.6rem;
+		}
+		#closeBtn_shopPubu_Show{
+			width:0.8rem;
+			height: 0.9rem;
+			position: absolute;
+			top:0.5rem;
+			left: 0.5rem;
+		}
+		#homeLogo_shopPubu_Show{
+			width:0.8rem;
+			height: 0.9rem;
+			position: absolute;
+			top:0.5rem;
+			right: 0.7rem;
+		}
+		#topimg img{
+			width:15rem;
+			height:7.64rem;
+		}
+		.content_shopPubu_Show li{
+			width:6.9rem;
+			height:9rem;
+			float: left;
+			margin-left: 0.4rem;
+			margin-top: 0.3rem;
+			text-align: center;
+			font-size: 0.5rem;
+		}
+		.content_shopPubu_Show li img{
+			width:6.9rem;
+			height: 6.9rem;
+		}
+		
+		/*进入画面*/
+		#HomeImg{
+			position: fixed;
+			margin: auto;
+			z-index:4000;
+			width:15rem;
+			height: 26.68rem;
+		}

@@ -1,0 +1,312 @@
+*{
+			margin: 0;
+			padding: 0;
+			font-family: "微软雅黑";
+		}
+		li{
+			list-style: none;
+		}
+		.upNav_singleShop{
+			width:15rem;
+			height:1.8rem;
+			border-bottom: 0.02rem solid #ababab;
+			background: #f9f9f9;
+			text-align: center;
+			line-height: 1.8rem;
+		}
+		.upNav_singleShop span{
+			font-size: 0.6rem;
+		}
+		#closeBtn_singleShop{
+			width:0.8rem;
+			height: 0.9rem;
+			position: absolute;
+			top:0.5rem;
+			left: 0.5rem;
+		}
+		#homeLogo{
+			width:0.8rem;
+			height: 0.9rem;
+			position: absolute;
+			top:0.5rem;
+			right: 0.5rem;
+		}
+		.swiper-container{
+		    width: 15rem;
+		    height:18.6rem;
+		    background: #f3f3f3;
+		}  
+		.swiper-slide{
+			width:15rem;
+			height:16rem;
+		}
+		.swiper-slide img{
+			width:15rem;
+			height:15rem;
+			margin-top:1rem;
+		}
+		.swiper-pagination-bullet{
+			width:0.4rem;
+			height:0.4rem;
+			margin:0.3rem 0 0 0!important;
+			background: white;
+			border: 0.02rem solid #555555!important;
+			opacity: 1;
+		}
+		.swiper-pagination-bullet-active{
+			background: #808080;
+		}
+		.swiper-pagination{
+			left:0.2rem;
+			right: 0px!important;
+		}
+		#xinxi{
+			width:3.08rem;
+			height: 1.24rem;
+			position: fixed;
+			right:0.8rem;
+			top:2.4rem;
+			z-index: 1000;
+		}
+		/*信息页面*/
+		#xinxiContent{
+			width:15rem;
+			height:24rem;
+			position: fixed;
+			top:1.8rem;
+			left:0px;
+			z-index:999;
+			background: #f3f3f3;
+		}
+		.xinxiTrue{
+			width:14.2rem;
+			padding: 1rem 0 0 0.8rem;
+			height: 9.4rem;
+			border-bottom: 0.02rem solid #000;
+			border-top: 0.02rem solid #000;
+			margin-top: 3.6rem;
+		}
+		#xinxiTrueName{
+			font-size: 0.56rem;
+		}
+		.xinxiTrue ul{
+			width:14.2rem;
+		}
+		.xinxiTrue ul li{
+			width:14.2rem;
+			height:0.4rem;
+			margin-top:0.3rem;
+			font-size:0.5rem;
+			color: #686868;
+		}
+		/**/
+		#moneyShow{
+			width:15rem;
+			height:1.72rem;
+			line-height:1.72rem;
+			text-align: center;
+			color: #9b9b9b;
+			font-size:0.5rem;
+		}
+		#shopButtomShowFather{
+			width:15rem;
+			height:2rem ;
+			text-align: center;
+		}
+		#shopButtomShow li{
+			width:2rem;
+			margin: 0 auto;
+			height:2rem;
+			float: left;
+			display: inline;
+			margin-left: 0.2rem;
+		}
+		#shopButtomShow li:nth-of-type(1){
+			margin-left: 5.5rem
+		}
+		#shopButtomShow li img{
+			width:1.98rem;
+			height:1.98rem;
+		}
+		#footerNav{
+			margin-top: 0.8rem;
+			width:15rem;
+			height:1.4rem;
+		}
+		#footerNav li{
+			float: left;
+			width:4.6rem;
+			height:1.4rem;
+			text-align: center;
+			line-height:1.4rem;
+			margin-left:0.3rem;
+			background: #f3f3f3;
+			font-size:0.56rem;
+			color: #000;
+		}
+		.singleShopNeiye_ative{
+			display: none;
+		}
+		#liji{
+			width:15rem;
+			position: absolute;
+			bottom:-10rem
+			left: 0px;
+			z-index: 2100;
+			overflow-x: hidden;
+		}
+		#liji li{
+			width:14.4rem;
+			height:1.58rem;
+			font-size:0.5rem;
+			line-height:1.58rem;
+			padding-left:0.6rem;
+			border-bottom: 0.02rem solid #c8c7cc;
+			background: rgba(255,255,255,0.7);
+		}
+		#jiaru{
+			width:15rem;
+			position: absolute;
+			bottom: -10rem;
+			left: 0px;
+			z-index: 2100;
+			overflow-x: hidden;
+		}
+		#jiaru li{
+			width:14.4rem;
+			height:1.58rem;
+			font-size:0.5rem;
+			line-height:1.58rem;
+			padding-left: 0.6rem;
+			border-bottom: 0.02rem solid #c8c7cc;
+			background: rgba(255,255,255,0.7);
+		}
+		.jiaruBtn{
+			width:4rem;
+			height:1.6rem;
+			background: black;
+			color: white;
+			text-align: center;
+			line-height: 1.6rem;
+			display: inline-block;
+			position: absolute;
+			right:-4rem;
+		}
+		.jiesuanBtn{
+			width:4rem;
+			height:1.6rem;
+			background: black;
+			color: white;
+			text-align: center;
+			line-height: 1.6rem;
+			display: inline-block;
+			position: absolute;
+			right:-4rem;
+		}
+		.boxborder{
+			border: 0.02rem solid #000;
+		}
+		#rongliang{
+			width:15rem;
+			height: 26.68rem;
+		}
+		/*待支付页面样式*/
+		#buyMenu{
+			position: absolute;
+			left: 15rem;
+			top: 0px;
+		}
+		.upNav_buyMenu{
+			width:15rem;
+			height: 1.8rem;
+			border-bottom: 0.02rem solid #ababab;
+			background: #f9f9f9;
+			text-align: center;
+		}
+		.upNav_buyMenu span{
+			font-size: 0.6rem;
+			line-height: 1.8rem;
+		}
+		.upNav_buyMenu img{
+			width:0.8rem;
+			height: 0.9rem;
+			position: absolute;
+			top:0.5rem;
+			left:0.5rem;
+		}
+		.p_buyMenu{
+			text-align: center;
+			width:15rem;
+			height: 0.92rem;
+			border-bottom: 0.02rem solid #c8c7cc;
+			font-size: 0.4rem;
+			color:#6b6b6b;
+			background: #ebebeb;
+			line-height: 0.92rem;
+		}
+		.jutiBuy{
+			width:15rem;
+		}
+		.jutiBuy li{
+			width:14.2rem;
+			height: 0.98rem;
+			border-bottom: 0.02rem solid #c8c7cc;
+			padding: 0.68rem 0 0 0.8rem;
+			font-size: 0.4rem;
+		}
+		.jutiBuy textarea{
+			border: none;
+			outline: none;
+			width:12.56rem;
+			height: 3.48rem;
+			font-size: 0.4rem;
+			padding-top: 0.1rem;
+		}
+		.jutiBuy div{
+			float: right;
+			line-height: 0.98rem;
+			width:8rem;
+			height:0.98rem;
+			font-size:0.4rem;
+			text-align: right;
+			margin-right:0.8rem;
+		}
+		#address{
+			width:14.2rem
+			padding: 0.68rem 0 0 0.8rem;
+			height: 3.58rem;
+		}
+		.money_Zong{
+			width:15rem;
+			height: 0.7rem;
+			position: absolute;
+			right: 0.8rem;
+			bottom: 2.6rem;
+			font-size: 0.5rem;
+			text-align: right;
+		}
+		.foot_Buy input{
+			width:4rem;
+			height: 1.2rem;
+			outline: none;
+			border: none;
+			text-align: center;
+			font-size: 0.5rem;
+			position: absolute;
+			right: 0.8rem;
+			bottom:0.6rem;
+		}
+		#author{
+			width:15rem;
+			height: 26rem;
+			background: url(../img/author.png)no-repeat  #ebebeb center 50%;
+			background-size: 9.98rem 12.12rem;
+		}
+		#tianjianSucces{
+			width:3.48rem;
+			height: 1.48rem;
+			position: fixed;
+			left: 40%;
+			top: 40%;
+			z-index: 2900;
+		}

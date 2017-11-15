@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<script type="text/javascript">
+			//获取像素比
+			var head =document.getElementsByTagName('head')[0];
+			var meta =document.createElement('meta');
+			meta.name='viewport';
+			var i = window.devicePixelRatio>1?1/window.devicePixelRatio:1;
+			meta.content="width=device-width,user-scalable=yes,initial-scale="+i+",minimum-scale="+i+",maximum-scale="+i;
+			head.appendChild(meta);
+			//设置rem
+			var iw =window.innerWidth;
+			//IW=40
+			var font =iw/15;
+			var html =document.getElementsByTagName('html')[0];
+			html.style.fontSize =font+'px';
+		</script>
+	</head>
+	<body>
+		<div id="HomePage">
+			<div class="upNav">
+				<img src="img/imges/sousuo.png"/>
+			</div>
+			<div class="upTwoNav">
+				<ul id="Home_Navname">
+					<li>女士</li>
+					<li>男士</li>
+					<li style="color: #c00f17;">11.11</li>
+					<li>热销</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper" >
+				        <div class="swiper-slide" v-for="(i,index) in lunboShop"><img :src="i.src" class="lunbotu_content1"/></div>
+				    </div>
+				    <!--<!--<!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+				<div class="newShop">
+					<div class="newShopNav"><span style="margin-left: 5.6rem;">最新单品</span><span style="margin-left: 4.6rem;font-size: 0.4rem;" id="more_Btn">更多></span></div>
+					<ul>
+						<li><img src="img/shop/shop001.png"/></li>
+						<li class="ML5"><a href="singleShop.html?0"><img src="img/shop/shop002.png"/></a></li>
+						<li class="ML5"><img src="img/shop/shop003.png"/></li>
+						<li class="MT1"><img src="img/shop/shop004.png"/></li>
+						<li class="ML5 MT1"><img src="img/shop/shop005.png"/></li>
+						<li class="ML5 MT1"><img src="img/shop/shop006.png"/></li>
+					</ul>
+				</div>
+				<div >
+					<div class="singleShop" v-for="(i,index) in Home_shop">
+						<div class="newShopNav01"><span style="margin-left: 5.2rem;" class="single_name">{{i.name}}</span><span style="margin-left:4.5rem;font-size: 0.4rem;">更多></span></div>
+						<!--=图片轮播 -->
+						<div class="swiper-container02" style="overflow-x:hidden;">
+						    <div class="swiper-wrapper" >
+						        <div class="swiper-slide" v-for="(j,index) in i.src"><img :src="j" class="singleShop_num"/></div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="width:15rem;height: 2rem;"></div>
+			<div class="bottomNav">
+				<ul>
+					<li class="ML3 active" ><i class="fa fa-home" ></i><p>首页</p></li>
+					<li class="ML4" id="shopLogo"><i class="fa fa-shopping-bag" ></i><p>购物袋</p></li>
+					<li class="ML4" id="myLogo"><i class="fa fa-user-circle-o" ></i><p>我的账户</p></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--登录页面-->
+		<div id="loginPage" class="activeHide">
+		<div class="upNav_login">
+			<img src="img/XX.png" id="closeBtn_denglu"/>
+		</div>
+		<div class="loginNav">
+			<ul>
+				<li><input type="text" name="" id="" value="" placeholder="手机号(含微信号)/用户名"/></li>
+				<li><input type="password" name="" id="" value="" placeholder="登入密码"/></li>
+				<li>登入</li>
+			</ul>
+		</div>
+		<ul class="loginPage_create">
+			<li>或者&nbsp;&nbsp;创建用户&nbsp;&nbsp;&nbsp;></li>
+		</ul>
+		</div>
+		
+		<!--注册页面-->
+		<div id="registerPage" class="activeHide">
+			<div class="registerPage_upNav">
+				<span id="registerPage_quxiao">取消</span><span id="">注册</span><input type="button" id="registerPage_queren" value="确认" disabled="disabled"></input>
+			</div>
+			<div class="registerPage_content">
+				<ul>
+					<li><span id=""><i>*&nbsp;&nbsp;</i>性别</span><input type="text" name="" id="registerPage_content_sex" value="" /></li>
+					<li><span id=""><i>*&nbsp;&nbsp;</i>手机</span><input type="number" name="" id="registerPage_content_phone" value="" placeholder="+86"/></li>
+					<li><span id=""><i>*&nbsp;&nbsp;</i>验证码</span><input type="text" name="" id="registerPage_content_code" value="" class="input_03"/><a>获取验证码</a></li>
+					<li><span id=""><i>*&nbsp;&nbsp;</i>登入密码</span><input type="password" name="" id="registerPage_content_passone" value="" placeholder="仅限6-12位的数组和字母，注意大小写"/></li>
+					<li><span id=""><i>*&nbsp;&nbsp;</i>确认密码</span><input type="password" name="" id="registerPage_content_passtwo" value="" /></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--购物袋-->
+		<div id="shopBag" class="activeHide">
+			<div class="upNav_shopBag">
+				<a href="javascript:history.go(-1)"><img src="img/back001.png" id="closeBtn_shopBag"/></a>
+				<span>购物袋</span>
+			</div>
+			<div class="content_shopBag">
+				<img src="img/shopBab0001.png"/>
+				<input type="button" value="即刻添置"  id="tianzhiBtn"/>
+			</div>
+			<div id="">
+				
+			</div>
+		</div>
+		
+		<!--商品分类-->
+		<div id="menuNav" class="activeHide">
+			<div class="upNav_menuNav">
+				<img src="img/back001.png" id="menuNav_closeBtn"/>
+				<span id="upNav_name"></span>
+			</div>
+			<div class="upTwoNav_menuNav">
+				<ul id="shopNavname">
+					<li>女士</li>
+					<li>男士</li>
+					<li>11.11</li>
+					<li>热销</li>
+				</ul>
+			</div>
+			<div class="menuContent" id="menuContentZhong">
+				<div class="menuContent_active">
+					<ul >
+						<li>查看全部</li>
+						<li style="color: #7cd8bf;">鞋履&nbsp;|</li>
+						<li>平底鞋</li>
+						<li>高跟鞋</li>
+						<li>凉鞋</li>
+						<li>靴子</li>
+						<li>运动鞋</li>
+						<li style="color: #7cd8bf;">配饰&nbsp;|</li>
+						<li>钱包</li>
+						<li>小皮件</li>
+					</ul>
+					<ul>
+						<li style="color: #7cd8bf;">包袋&nbsp;|</li>
+						<li>手提包</li>
+						<li>单肩包</li>
+						<li>手拿包</li>
+						<li>双肩包</li>
+						<li style="color: #7cd8bf;">主题&nbsp;|</li>
+						<li>夏末狂想曲</li>
+						<li>沙漠奇遇</li>
+						<li>pedro&nbsp;Studio</li>
+						<li>中性柔美</li>
+						<li>多彩格调</li>
+						<li>别样混搭术</li>
+						<li>美学风格志</li>
+						<li>光影协奏曲</li>
+					</ul>
+				</div>
+				<div class="menuContent_active" >
+					<ul >
+						<li>查看全部</li>
+						<li style="color: #7cd8bf;">鞋履&nbsp;|</li>
+						<li>正装鞋</li>
+						<li>休闲鞋</li>
+						<li>运动鞋</li>
+						<li>凉鞋</li>
+						<li style="color: #7cd8bf;">配饰&nbsp;|</li>
+						<li>腰带</li>
+						<li>钱包及小物件</li>
+						<li>手环</li>
+						<li>围巾</li>
+					</ul>
+					<ul>
+						<li style="color: #7cd8bf;">包袋&nbsp;|</li>
+						<li>双肩包</li>
+						<li>单肩包</li>
+						<li>公文包</li>
+						<li>手拿包及小手袋</li>
+						<li style="color: #7cd8bf;">主题&nbsp;|</li>
+						<li>拼色风潮</li>
+						<li>运动回潮</li>
+						<li>摩登爵士</li>
+						<li>新暖秋质感</li>
+						<li>享假期时刻</li>
+						<li>秋日必备法则</li>
+						<li>色彩几何学</li>
+						<li>型动出街示范</li>
+					</ul>
+				</div>
+				<div class="menuContent_active">
+					<ul >
+						<li style="color: #bb0828;">女士折扣</li>
+						<li>鞋履</li>
+						<li>配饰</li>
+						<li>包装</li>
+						<li style="color: #bb0828;">男士折扣</li>
+						<li>鞋履</li>
+						<li>配饰</li>
+						<li>包装</li>
+					</ul>
+				</div>
+				<div class="menuContent_active">
+					<ul >
+						<li>女士热销</li>
+						<li>男士热销</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--商品瀑布流展示-->
+		<div id="shopPubu_Show" class="activeHide">
+			<div class="upNav_shopPubu_Show">
+				<img src="img/back001.png" id="closeBtn_shopPubu_Show"/>
+				<span id="singleShopName_shopPubu_Show"></span>
+				<a href="index.html"><img src="img/homelogo.png" id="homeLogo_shopPubu_Show"/></a>
+			</div>
+			<div class="content_shopPubu_Show">
+				<div id="topimg">
+					<img src="" />
+				</div>
+				<ul>
+					<li v-for="(cn,index) in shop_pubuliu" class="content_shopPubu_Show_li">
+						<img :src="cn.src"/>
+						<p>{{cn.name}}</p>
+						<p>{{cn.price}}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>
