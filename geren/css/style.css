@@ -1,0 +1,590 @@
+/*公共样式*/
+
+body,
+html {
+	font-family: "微软雅黑";
+	,
+	Arial;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+li,
+ul,
+p,
+dl,
+dt,
+dd {
+	padding: 0;
+	margin: 0
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+	text-decoration: none;
+	list-style: none
+}
+
+.lf {
+	float: left
+}
+
+.rt {
+	float: right
+}
+
+.clear {
+	clear: both
+}
+
+.ovh {
+	overflow: hidden
+}
+
+textarea {
+	resize: none
+}
+
+a {
+	color: #303030;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+input,
+textarea {
+	border: none;
+	outline: none;
+}
+
+img {
+	border: none
+}
+
+.display_none {
+	display: none !important;
+}
+
+.display_block {
+	display: block !important;
+}
+
+@font-face {
+	font-family: 'yrdzst';
+	src: url('杨任东竹石体-Extralight.ttf');
+}
+
+
+/*背景音乐*/
+
+@keyframes yuan {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg)
+	}
+}
+
+@-moz-keyframes yuan {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg)
+	}
+}
+
+@-webkit-keyframes scales {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+
+@-moz-keyframes scales {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+
+@-webkit-keyframes scales_Nav01 {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes scales_Nav02 {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+
+.music_box {
+	width: 50px;
+	height: 50px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	z-index: 3;
+	opacity: 0.8;
+}
+
+.music {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	z-index: 3;
+	background: black;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-image: url(../img/public/music-off.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	cursor: pointer;
+}
+
+
+/*右边导航栏*/
+
+.x_input {
+	position: fixed;
+	top: 80px;
+	right: 180px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	z-index: 3;
+	background: white;
+	cursor: pointer;
+}
+
+.span1 {
+	width: 30px;
+	height: 1px;
+	background-color: black;
+	margin-top: 20px;
+	display: block;
+	margin-left: 15px;
+	transition: 0.5s;
+}
+
+.span2 {
+	width: 30px;
+	height: 1px;
+	background-color: black;
+	margin-top: 10px;
+	display: block;
+	margin-left: 15px;
+	transition: 0.5s;
+}
+
+.span3 {
+	width: 30px;
+	height: 1px;
+	background-color: black;
+	margin-top: 10px;
+	display: block;
+	margin-left: 15px;
+	transition: 0.5s;
+}
+
+.x_input:hover>.span1 {
+	transform: translateY(11px) rotate(45deg);
+}
+
+.x_input:hover>.span2 {
+	opacity: 0;
+}
+
+.x_input:hover>.span3 {
+	transform: translateY(-11px) rotate(-45deg);
+}
+
+.Nav_right_bigbox {
+	width: 1500px;
+	height: 1500px;
+	position: fixed;
+	top: -640px;
+	right: -540px;
+	z-index: 3;
+	background: #79ddf2;
+	border-radius: 50%;
+	animation: scales_Nav 0.5s;
+}
+
+.Nav_right_contentul {
+	position: absolute;
+	top: 700px;
+	right: 900px;
+}
+
+.Nav_right_contentul li {
+	width: 200px;
+	text-align: center;
+	height: 45px;
+	font-size: 45px;
+	margin-top: 80px;
+	font-family: "YouYuan";
+	line-height: 45px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.Nav_right_contentul li:hover {
+	color: white;
+}
+
+.tip_text {
+	font-family: 'yrdzst';
+	font-size: 40px;
+}
+
+
+/*首页*/
+
+.bg-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(../img/background2.jpg);
+	background-repeat: no-repeat;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: .8;
+	background: #1C1D21;
+}
+
+.header {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.header_content {
+	margin: 20% auto;
+	text-align: center;
+	color: white;
+	font-family: 'yrdzst'
+}
+
+.header_content span:nth-of-type(1) {
+	font-size: 100px;
+	display: block;
+}
+
+.header_content span:nth-of-type(2) {
+	font-size: 60px;
+	margin-left: 500px;
+	margin-top: 20px;
+	display: block;
+}
+
+
+/*作品展示*/
+
+.zuopin_bigbox {
+	width: 100%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.zuopin_bigbox_title {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 80px;
+	margin-top: 100px;
+	letter-spacing: 10px;
+	font-weight: bolder;
+	font-family: 'Open Sans', sans-serif;
+	color: #fcfcfc;
+	display: table;
+}
+
+.zuopin_ul {
+	width: 1300px;
+}
+
+.zuopin_ul li {
+	width: 300px;
+	height: 500px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 100px;
+}
+
+.zuopin_ul_li_imgbox {
+	width: 300px;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.zuopin_ul li:nth-of-type(odd) {
+	background: #f7f7f6;
+}
+
+.zuopin_ul_li_imgbox img {
+	width: 200px;
+	height: 400px;
+	transition: 0.5s;
+}
+
+.zuopin_ul_li_imgbox_taishi {
+	width: 300px;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.zuopin_ul_li_imgbox_taishi img {
+	width: 250px;
+	height: 150px;
+	transition: 0.5s;
+}
+
+.zuopin_ul li img:hover {
+	transform: scale(1.1);
+}
+
+.zuopin_ul_li_name {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	text-align: center;
+	background: white;
+}
+
+
+/*关于我*/
+
+.about_me_box {
+	width: 100%;
+	height: 800px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg-img01 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(../img/dcc2ccd9.jpg);
+	background-repeat: no-repeat;
+}
+
+.overlay01 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	background: #1C1D21;
+}
+
+.about_me_title {
+	width: 800px;
+	height: 300px;
+	font-size: 80px;
+	color: white;
+	font-family: 'yrdzst';
+	text-align: center;
+	line-height: 300px;
+	letter-spacing: 10px;
+	font-weight: 800;
+}
+
+.about_me {
+	width: 800px;
+	height: 500px;
+	background: white;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+.typing {
+	text-indent: 2em;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+@media (max-width:1921px) {}
+
+@media (max-width: 1500px) {
+	.zuopin_ul{
+		width: 1200px;
+	}
+}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+	.zuopin_ul{
+		width: 1000px;
+	}
+	.zuopin_ul li {
+		margin-left: 150px;
+	}
+}
+
+@media (max-width: 959px) {
+	.zuopin_ul{
+		width: 100%;
+	}
+	.zuopin_ul li {
+		margin-left: 80px;
+	}
+	.x_input {
+		position: fixed;
+		top: 80px;
+		right: 80px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		z-index: 3;
+		background: white;
+		cursor: pointer;
+	}
+	.Nav_right_bigbox {
+		width: 1300px;
+		height: 1300px;
+		position: fixed;
+		top: -540px;
+		right: -540px;
+		z-index: 3;
+		background: #79ddf2;
+		border-radius: 50%;
+		animation: scales_Nav 0.5s;
+	}
+	.Nav_right_contentul {
+		top: 600px;
+		right: 800px;
+	}
+	.tip_text {
+		font-size: 30px;
+	}
+}
+@media (max-width: 767px){
+	
+	.header_content{
+		display: flex;
+		flex-direction: column;
+	}
+	.header_content span:nth-of-type(2) {
+	    font-size: 30px;
+	    margin-left: 00px;
+	    margin-top: 20px;
+	    display: block;
+	}
+	.x_input{
+		display: none;
+	}
+	.zuopin_ul{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.zuopin_ul li {
+		margin-left: 0px;
+	}
+	.about_me_box{
+		flex-direction: column;
+	}
+	.about_me_title{
+		width: 100%;
+	    height: 300px;
+	    line-height: 300px;
+	}
+	.about_me{
+		width: 400px;
+	    height: 400px;
+	}
+}
+@media (max-width: 375px){
+	.about_me_title{
+		width: 350px;
+	    height: 300px;
+	    line-height: 300px;
+	    font-size: 50px;
+	}
+	.about_me{
+		width: 300px;
+	    height: 200px;
+	    padding: 10px;
+    	box-sizing: border-box;
+	}
+	
+}
+@media (max-width: 320px){/*小于320的设备 苹果5手机上 */
+    
+}
