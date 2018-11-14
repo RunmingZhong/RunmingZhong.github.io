@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+		<script type="text/javascript">
+			//获取像素比
+			var head =document.getElementsByTagName('head')[0];
+			var meta =document.createElement('meta');
+			meta.name='viewport';
+			var i = window.devicePixelRatio>1?1/window.devicePixelRatio:1;
+			meta.content="width=device-width,user-scalable=yes,initial-scale="+i+",minimum-scale="+i+",maximum-scale="+i;
+			head.appendChild(meta);
+			//设置rem
+			var iw =window.innerWidth;
+			//IW=100
+			var font =iw/7.5;
+			var html =document.getElementsByTagName('html')[0];
+			html.style.fontSize =font+'px';
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/pro_details/pro_details.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+    	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<a><div class="pro_back">
+			<img src="img/arrow-left.png"/>
+		</div></a>
+		<div class="pro_nav">
+			<a href="index.html"><img src="img/back.png"/></a>
+			<div class="pro_nav01 active">
+				商品
+			</div>
+			<div class="pro_nav02">
+				详情
+			</div>
+		</div>
+		<!--产品轮播图-->
+		<div class="pro_lunbo">
+			<div class="swiper-container">
+			  <div class="swiper-wrapper">
+			    <!--<div class="swiper-slide"><img src="img/pro_details/lu01.png"/></div>-->
+			  </div>
+			   <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!--放大图-->
+		<div class="bigimg_box display_none">
+			<img src="img/morenlogo.jpg" class="bigimg"/>
+		</div>
+		
+		
+		<!--产品名称及价格-->
+		<div class="pro_name">
+			<div class="pro_jiage">
+				团购价：<span style="font-size: 0.34rem; color: red;">￥<span id="pro_jiage_hong">78</span></span>
+			</div>
+			<div class="pro_names">
+				拉芙菲尔 五星级酒店枕头成人护颈枕正品情侣家用枕芯
+			</div>
+			
+			<div class="shuliang">
+				<ul>
+					<li>
+						<p id="cantuanrenshu">5</p>
+						<p>参团人数</p>
+					</li>
+					<li>
+						<p id="yigourenshu">21000</p>
+						<p>已购数量</p>
+					</li>
+					<li>
+						<p id="dizhi">广西</p>
+						<p>货源地址</p>
+					</li>
+				</ul>
+			</div>
+			<div class="layui-progress">
+			  <div class="layui-progress-bar" ></div>
+			</div>
+			<div class="shijian">
+				<div class="timer_name">
+					剩余时间：
+					<p id="timer"></p>
+				</div>
+				<div class="timer_right">
+					开团数量：
+					<span id="kaituannum">
+						30000
+					</span>
+				</div>
+			</div>
+			
+		</div>
+		<!--产品参数-->
+		<div class="pro_canshu">
+			<img src="img/pro_details/gongsilogo.png"/>
+			<div class="pro_canshu_content">
+				<p class="pro_canshu_content01">精品酒店网</p>
+				<p class="pro_canshu_content02">酒店用品批发、零售、酒店用品五星级酒店批发...</p>
+			</div>
+		</div>
+		
+		<!--产品详情-->
+		<div class="pro_detailss">
+			<div class="pro_detailss_title">
+				产品详情
+			</div>
+			<div class="pro_details_img">
+				<!--<img src="img/pro_details/tu02.png"/>-->
+				
+			</div>
+		</div>
+		<div class="kong">
+			
+		</div>
+		
+		
+		<!--底部BTN-->
+		<div class="foot_btn">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=1562177787&site=qq&menu=yes">
+				<div class="foot_kefu" onclick="chatQQ()">
+					<img src="img/pro_details/telekefu.png"/>
+					客服
+				</div>
+			</a>
+			<div class="foot_shichang">
+				<span style="text-decoration: line-through;">￥<span id="shichangjia">108</span></span><br />
+				市场价格
+			</div>
+			<div class="foot_btn_buy">
+				￥<span id="tuangoujia">78</span><br />
+				团购价格
+			</div>
+		</div>
+		
+		
+		<!--弹窗详情-->
+		<div class="xiangqingcanshu">
+			<div class="xiangqingcanshu_content">
+				<div class="shopimg">
+					<img src="img/pro_details/lu01.png" class="shopimg_img"/>
+				</div>
+
+				<div class="xiangqingcanshu_content01">
+					<div class="xiangqingcanshu_content_name">
+						<p>￥<span id="xiaotujiage">0</span></p><br />
+
+						<!--<div class="xiangqingcanshu_content_name02">
+							已选择：
+							<span id="yixuanze">
+								
+							</span>
+						</div>-->
+					</div>
+					<div class="chacha">
+						<img src="img/chacha.png"/>
+					</div>
+				</div>
+				
+				<div class="xiangqingcanshu_content05">
+					起批数量：<span id="qipiNum" style="color: red;"></span>
+				</div>
+				
+				<div class="xiangqingcanshu_content03">
+					注意：低于起批数量请联系客服。
+				</div>
+				<div class="xiangqingcanshu_content_xin">
+				</div>
+				 
+				<div class="xiangqingcanshu_content_xin02">
+					<div class="rightright">
+						<span class="xiangqingcanshu_content_xin02_jian">共<span id="xiangqingcanshu_content_xin02_jiannum">0</span>件</span>
+						<span class="xiangqingcanshu_content_xin02_zongjia">￥<span id="xiangqingcanshu_content_xin02_zongjianum">0</span></span>
+					</div>
+					<a href="index.html#shop"> </a>
+				</div>
+				<!--<div class="xiangqingcanshu_content02">
+					颜色/规格<br />
+					<ul id="canshuguige">
+						<li><span class="yanse">黑色987</span>/<span class="guige">23</span></li>
+						
+					</ul>
+				</div>
+				
+				
+				<div class="xiangqingcanshu_content04">
+					数量
+					<div class="number">
+						<button class="decrease" onclick="numDec()">-</button>
+						<input type="number" name="number" id="number" value="1" />
+						<button class="increase" onclick="numAdd()">+</button>
+					</div>
+				</div>-->
+				
+				
+			</div>
+			<div class="xiangqingcanshu_btn">
+				确定
+			</div>
+		</div>
+		<!--弹窗-->
+		<div class="tanchuan_big display_none">
+			<div class="tanchuan">
+				<div class="tanchuan_top">
+					请选择下一步
+				</div>
+				<div class="tanchuan_bottom">
+					<div class="tanchuan_bottom01">
+						继续购物
+					</div>
+					<div class="tanchuan_bottom02">
+						提交团购信息
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/pinchzoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pro_details/pro_details.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

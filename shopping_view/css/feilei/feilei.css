@@ -1,0 +1,62 @@
+
+.fenlei_nav_header{
+	width: 7.5rem;
+	height: 0.7rem;
+	background: white;
+	text-align: center;
+	font-size: 0.3rem;
+	line-height: 0.7rem;
+	box-shadow: 5px 5px 5px #000;
+}
+.back{
+	float: left;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	z-index: 2;
+	top: 0.1rem;
+	left: 0.2rem;
+}
+.fenlei_content{
+	width: 7.5rem;
+}
+.fenlei_content_left{
+	width: 2.5rem;
+	height: 7rem;
+	float: left;
+}
+.fenlei_content_left li{
+	font-size: 0.25rem;
+	line-height: 1rem;
+	text-align: center;
+	width: 2.5rem;
+	height: 1rem;
+	background: #f7f7f7;
+	border-bottom: 0.01rem solid #efefef;
+}
+.li_active{
+	background: #ffffff !important;
+	color: #169bd5;
+	border: none;
+}
+.fenlei_content_right{
+	width: 5rem;
+	float: left;
+	background: white;
+}
+.feilei_li_two{
+	width: 5rem;
+	box-sizing: border-box;
+	padding-left: 0.07rem;
+}
+.feilei_li_two li{
+	width: 5rem;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.25rem;
+	text-align: center;
+	border-bottom: 0.01rem solid #f7f7f7;
+}
+.disp{
+	display: none;
+}

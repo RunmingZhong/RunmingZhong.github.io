@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<script type="text/javascript">
+			//获取像素比
+			var head =document.getElementsByTagName('head')[0];
+			var meta =document.createElement('meta');
+			meta.name='viewport';
+			var i = window.devicePixelRatio>1?1/window.devicePixelRatio:1;
+			meta.content="width=device-width,user-scalable=yes,initial-scale="+i+",minimum-scale="+i+",maximum-scale="+i;
+			head.appendChild(meta);
+			//设置rem
+			var iw =window.innerWidth;
+			//IW=100
+			var font =iw/7.5;
+			var html =document.getElementsByTagName('html')[0];
+			html.style.fontSize =font+'px';
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/feilei/feilei.css"/>
+    	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<div class="fenlei_nav">
+			<div class="fenlei_nav_header">
+				<a href="index.html#shop"><img src="img/back.png" class="back"/></a>
+				<span>商品分类</span>
+			</div>
+		</div>
+		<div class="fenlei_content">
+			<div class="fenlei_content_left">
+				<ul>
+<!--				<li data-cataId='1' class="feilei_li li_active">工程物资</li>
+					<li data-cataId='2' class="feilei_li">IT智能物资</li>
+					<li data-cataId='3' class="feilei_li">阿斯顿发送到</li>
+					<li data-cataId='4' class="feilei_li">发的多撒阿斯顿</li>
+					<li data-cataId='5' class="feilei_li">阿德阿斯顿</li>
+					<li data-cataId='6' class="feilei_li">是的发的</li>
+					<li data-cataId='7' class="feilei_li">阿斯顿阿斯顿</li>-->
+				</ul>
+			</div>
+			<div class="fenlei_content_right">
+				<!--<ul data-cataId='1' class="feilei_li_two feilei_li_1">
+					<a><li>adsfasd das f</li></a>
+				</ul>
+				<ul data-cataId='2' class="feilei_li_two disp feilei_li_2">
+					<a><li>2</li></a>
+				</ul>
+				<ul data-cataId='3' class="feilei_li_two disp feilei_li_3">
+					<a><li>3</li></a>
+				</ul>
+				<ul data-cataId='4' class="feilei_li_two disp feilei_li_4">
+					<li>4</li>
+				</ul>
+				<ul data-cataId='5' class="feilei_li_two disp feilei_li_5">
+					<li>5</li>
+				</ul>
+				<ul data-cataId='6' class="feilei_li_two disp feilei_li_6">
+					<li>6</li>
+				</ul>
+				<ul data-cataId='7' class="feilei_li_two disp feilei_li_7">
+					<li>7</li>
+				</ul>-->
+			</div>
+		</div>
+		
+		<script src="js/feilei/feilei.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
