@@ -271,6 +271,9 @@ img {
 .Nav_right_contentul li:hover {
 	color: white;
 }
+.Nav_right_contentul li a:hover {
+	color: white;
+}
 
 .tip_text {
 	font-family: 'yrdzst';
@@ -473,7 +476,7 @@ img {
 .typing {
 	text-indent: 2em;
 	font-size: 18px;
-	line-height: 20px;
+	line-height: 30px;
 }
 
 @media (max-width:1921px) {}
