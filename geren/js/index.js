@@ -53,6 +53,9 @@ $('.x_input').click(function(event){
 	},200)
 	
 })
+$('.Nav_right_contentul li a').click(function(){
+	xiaoshi_nav()
+})
 //导航栏消失
 function xiaoshi_nav(){
 	$('.Nav_right_bigbox').css('animation','scales_Nav02 1s ease')
